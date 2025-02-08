@@ -4,14 +4,18 @@ C++ GDAL读取S57图层示例
 ## 编译运行
 
 更改`src/main.cpp`中的pszFilename为实际海图文件位置(.000)  
+`src/main_shp.cpp`中则为实际shp文件位置  
 
 使用以下指令编译运行（假设使用g++，使用IDE、make、cmake请自行配置）：  
 ```bash
 g++ src/main.cpp -o gdal_demo -lgdal
+#g++ src/main_shp.cpp -o gdal_demo -lgdal
 ./gdal_demo
 ```
 
 程序应在检查文件是否包含`LNDARE`图层后，遍历该图层所有多边形几何要素，并对多边形外轮廓包含的所有点依次进行输出  
+
+若为shp文件，则输出第一个图层信息（shp一般仅有单个图层），此外shp文件的demo支持**Multipolygon**数据  
 
 ## 编译环境配置
 
