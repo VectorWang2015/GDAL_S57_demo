@@ -4,7 +4,7 @@ s57_file = "CN201301.000"
 
 
 # 1 degree in lon/lat is approx 111km
-def s57_to_vec_list(file_name, buffer_size=0.00001):
+def s57_to_vec_list(file_name, layer="LNDARE", buffer_size=0.00001):
     try:
         gdf = gpd.read_file(file_name, layer="LNDARE")
     except:
@@ -15,6 +15,12 @@ def s57_to_vec_list(file_name, buffer_size=0.00001):
     return expanded_geo_list
 
 if __name__ == "__main__":
-    geo_list = s57_to_vec_list(s57_file)
+    # land
+    lnd_geo_list = s57_to_vec_list(s57_file, layer="LNDARE")
     # print the first three objects in this demo
-    print(geo_list[:3])
+    print(lnd_geo_list[:3])
+
+    # isolated danger buoy
+    buoy_geo_list = s57_to_vec_list(s57_file, layer="BOYISD")
+    # print the first three objects in this demo
+    print(buoy_geo_list[:3])
