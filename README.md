@@ -67,3 +67,16 @@ cd vcpkg
 
 安装完成后，可以参考MS的教程对CMake项目进行配置：  
 https://learn.microsoft.com/zh-cn/vcpkg/get_started/get-started-vs?pivots=shell-powershell  
+
+## S-57海图说明
+
+### 浮标
+
+| 浮标图层 | 英文说明                                                     | 中文说明                                                     |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| BOYCAR   | A cardinal buoy is used in conjunction with the compass to indicate where the mariner may find the best navigable water. It is placed in one of the four quadrants (North, East, South and West), bounded by inter-cardinal bearings from the point marked. (UKHO NP 735, 5th Edition) | 基点浮标与罗盘配合使用，指示水手可以找到最佳航行水域的位置。它位于四个象限之一（北、东、南和西），以标记点之间的基点方位为界。 |
+| BOYINB   | An installation buoy is a buoy used for loading tankers with gas or oil. (IHO Chart Specifications, S-4) | 安装浮标是用于油轮装载天然气或石油的浮标。                   |
+| BOYISD   | A isolated danger buoy is a buoy moored on or above an isolated danger of limited extent, which has navigable water all around it. (UKHO NP735, 5th Edition) | 孤立危险浮标是系泊在有限范围的孤立危险之上或之上的浮标，（除浮标标记的位置外）其周围均为可通航水域。 |
+| BOYLAT   | A lateral buoy is used to indicate the port or starboard hand side of the route to be followed. They are generally used for well defined channels and are used in conjunction with a conventional direction of buoyage. (UKHO NP 735, 5th Edition) | 侧浮标用于指示要遵循的航线的左舷或右舷。它们通常用于明确的航道，并与常规方向浮标一起使用。 |
+| BOYSAW   | A safe water buoy is used to indicate that there is navigable water around the mark. (UKHO NP735, 5th Edition) | 安全水域浮标用于指示浮标周围有可通航水域。                   |
+| BOYSPP   | A special purpose buoy is primarily used to indicate an area or feature, the nature of which is apparent from reference to a chart, Sailing Directions or Notices to Mariners. (UKHO NP 735, 5th Edition) | 特殊用途浮标主要用于指示某个区域或特征，其性质可通过海图、航行指南或航海通告得知。 |
